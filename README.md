@@ -30,6 +30,9 @@ Now you can run V-REP and open the scene `roads_car_ros`.
 
 [[https://github.com/jokla/vrep_car_simulation/blob/master/scenes/vrep_cars.png|alt=octocat]]
 
+![Alt text](https://github.com/jokla/vrep_car_simulation/blob/master/scenes/vrep_cars.png?raw=true "Optional Title")
+
+
 You can find the model of the car [here](http://tf3dm.com/3d-model/car-white-61307.html), and the model of the roads [here](http://tf3dm.com/download-page.php?url=street-system-v10-48448).
 
 When you play start, the plugin will:
