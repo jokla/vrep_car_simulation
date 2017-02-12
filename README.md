@@ -66,27 +66,49 @@ You can find the model of the car [here](http://tf3dm.com/3d-model/car-white-613
 ## Move a car using a joystick
 Now we want to generate a velocity command using a joystick. We will use the node [https://github.com/jokla/teleop_twist_joy](https://github.com/jokla/teleop_twist_joy) and a PS4 Joystick ( but you can use any joystick working under Ubuntu).
 
-* Clone in your source catkin_ws folder the package `teleop_twist_joy`: `
- * `git clone git@github.com:jokla/teleop_twist_joy.git`    
- * Run a `catkin_make'   
+* Clone in your source catkin_ws folder the package `teleop_twist_joy`:
+ * `$ git clone git@github.com:jokla/teleop_twist_joy.git`    
+ * Run a `catkin_make`  
 
 To check if the joystick is working under Ubuntu you can install `jstest-gtk`:   
 * `$ sudo apt-get install jstest-gtk`   
 You can also check this tutorial: [ConfiguringALinuxJoystick](http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick)   
 
-Now you can try to launch the node:   
-`roslaunch roslaunch teleop_twist_joy teleop-ps4.launch`   
-This will publish in two topics:
+Now you can try to launch the node ():   
+`roslaunch teleop_twist_joy teleop-ps4.launch`   
+This node will publish in two topics:
 
 ```
 /joy
 /vrep/car0/SetTwist
-
 ```
 
-If you run the scene, you should be able to move the red car. You have to keep L1 pressed and after use the two thumbsticks to apply a linear velocity vx (right thumbstick - up and down) and angular velocity wz (right thumbstick - left and right).
+If you run the scene in V-REP, you should be able to move the red car. You have to keep L1 pressed and after use the two thumbsticks to apply a linear velocity vx (right thumbstick - up and down) and angular velocity wz (right thumbstick - left and right).
 
 You can change the buttons and axis modifying [this configuration file](https://github.com/jokla/teleop_twist_joy/blob/indigo-devel/config/ps4.config.yaml). 
+
+##Test OpenTLD 
+
+TLD = Robust Object Tracking Based on Tracking-Learning-Detection
+
+You will need to clone the following two packages in your `catkin_ws`:   
+`$ git clone https://github.com/pandora-auth-ros-pkg/open_tld`
+`$ git clone https://github.com/pandora-auth-ros-pkg/pandora_tld`
+
+After do a catkin_make and open the file [`/config/predator_topics.yaml`](https://github.com/pandora-auth-ros-pkg/pandora_tld/blob/master/config/predator_topics.yaml)
+
+You will need to modify the name of the `input_image_topic` with `/vrep/CameraTop`.
+
+To launch the node:
+`roslaunch pandora_tld predator_node.launch`
+
+A image window should appear, read [here](https://github.com/pandora-auth-ros-pkg/open_tld) to have more info about the Keyboard shortcuts. 
+
+This is the result:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Si8w4eYzhis/0.jpg)](https://www.youtube.com/watch?v=Si8w4eYzhis)
+
+
+Tutorial: https://github.com/rapp-project/rapp-platform/wiki/Remote-application-for-NAO-in-Python:-Use-ROS-&-TLD-tracker-to-approach-arbitrary-objects-(hard)
 
 ## Future work:
 * Simulate the Ackermann steering mechanism. Right now the car is just a static object. There is simple model in V-REP under the folder `example`
