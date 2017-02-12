@@ -28,8 +28,6 @@ Remember to run a roscore before launching V-REP.
 
 Now you can run V-REP and open the scene `roads_car_ros`.
 
-[[https://github.com/jokla/vrep_car_simulation/blob/master/scenes/vrep_cars.png|alt=octocat]]
-
 ![Alt text](https://github.com/jokla/vrep_car_simulation/blob/master/scenes/vrep_cars.png?raw=true "Optional Title")
 
 
