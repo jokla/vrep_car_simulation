@@ -104,7 +104,8 @@ To launch the node:
 
 A image window should appear, read [here](https://github.com/pandora-auth-ros-pkg/open_tld) to have more info about the Keyboard shortcuts. 
 
-This is the result:
+This is the result:   
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Si8w4eYzhis/0.jpg)](https://www.youtube.com/watch?v=Si8w4eYzhis)
 
 
