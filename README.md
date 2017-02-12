@@ -15,9 +15,6 @@ There are several ROS interfaces available for V-REP: see [here](http://www.copp
 
 In this case, I used the [VREP ROS Bridge](https://github.com/lagadic/vrep_ros_bridge/tree/master), mainly because the functionalities I needed are already implemented. 
 
-We need to:
-* publish images coming from a vision sensor
-* apply a twist velocity to an object with respect to its frame.
 
 ## Installation:
 
