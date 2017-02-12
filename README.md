@@ -1,6 +1,6 @@
 # vrep_car_simulation
 
-The aim of this project is to simulate and control one or more cars in V-REP using ROS. This is part of the (Open Source Self-Driving Car Initiative)[http://ossdc.org/join] (see in GitHub https://github.com/OSSDC/). 
+The aim of this project is to simulate and control one or more cars in V-REP using ROS. This is part of the [Open Source Self-Driving Car Initiative](http://ossdc.org/join) (see in GitHub https://github.com/OSSDC/). 
 
 The mission of this initiative and open organization is to bring the best research in self-driving car space and create a full stack of open source software and hardware components to allow anyone to build and test from toy to full-size self-driving cars.
 
