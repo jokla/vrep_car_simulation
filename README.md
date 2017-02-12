@@ -23,7 +23,7 @@ We need to:
 
 To test the scene, you will need to follow [this tutorial](https://github.com/lagadic/vrep_ros_bridge/tree/master). You will have then installed ROS, V-REP and the V-REP Ros Bridge. 
 
-## Launch Scene 
+## Run the simulation 
 Remember to run a roscore before launching V-REP.   
 
 Now you can run V-REP and open the scene `roads_car_ros`.
